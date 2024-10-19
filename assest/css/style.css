@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 15px;
+    height: 50px;
+    background-color: #ED1651;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    animation: back 2s ease-in-out infinite;
+}
+
+.btn span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 0%;
+    z-index: -1;
+    transition: all 1s;
+}
+
+#btn1:hover span {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#btn1:hover {
+    color: white;
+}
+
+/* header section start */
+header {
+    background-color: white;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid gray;
+}
+
+header .col #logo {
+    width: 100px;
+
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    padding: 0px 15px;
+
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    transition: all 0.4s;
+}
+
+header ul li a:hover {
+    color: #ED1651;
+}
+
+header ul .menu .submenu {
+    display: none;
+}
+
+header ul .menu {
+    position: relative;
+}
+
+header ul .menu:hover .submenu {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    top: 70px;
+    left: 0;
+
+}
+
+header ul .menu:hover .submenu div {
+    line-height: 50px;
+    border-bottom: 1px solid rgb(204, 203, 203);
+    padding-left: 20px;
+    position: relative;
+}
+
+header .col-lg-4 ul li {
+    padding: 0px 5px;
+
+}
+
+header .col-lg-4 ul .menu:hover .submenu {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 200px;
+    top: 70px;
+    left: -150px;
+    box-shadow: 4px 5px 20px gray;
+
+}
+
+header ul .menu .submenu a:hover {
+    color: #ED1651;
+    padding-left: 20px;
+    position: relative;
+}
+header ul .menu .submenu a:hover::before{
+    width: 20px;
+}
+header ul .menu .submenu a::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0px;
+    height: 1px;
+    transform: translateY(-50%);
+    transition: all 0.4s;
+    background-color: #EA1651;
+}
+
+/* header section end */
+/* benner section start */
+.banner{
+    overflow: hidden;
+}
+.banner .carousel-fade .carousel-item{
+transform: scale(1);
+transition: transform 0.4s;
+
+}
+.banner .carousel-fade .carousel-item.active{
+    transform: scale(1.09);
+}
+#readbtn{
+padding: 15px 40px;
+background-color: #EA1651;
+color: white;
+text-decoration: none;
+font-weight: 500;
+font-size: 17px;
+letter-spacing: 1px;
+position: relative;
+transition: all 0.6s;
+overflow: hidden;
+}
+#readbtn span{
+    position: relative;
+    z-index: 1;
+}
+#readbtn::before{
+    content: "";
+    width: 0px;
+    height:0px;
+    background: black;
+    position: absolute;
+top: -10px;
+left: 0;
+border-radius: 30px;
+transition: all 0.6s;
+}
+#readbtn:hover:before{
+    width: 200px;
+height: 100px;
+}
+/* benner section end */
