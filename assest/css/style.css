@@ -150,6 +150,11 @@ transition: transform 0.4s;
 .banner .carousel-fade .carousel-item.active{
     transform: scale(1.09);
 }
+.banner .carousel-indicators [data-bs-target]{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
 #readbtn{
 padding: 15px 40px;
 background-color: #EA1651;
